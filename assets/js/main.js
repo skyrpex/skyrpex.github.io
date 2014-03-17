@@ -5,7 +5,10 @@
         baseUrl: "assets/js",
         paths: {
             "jquery": "libs/jquery",
-            "bootstrap": "libs/bootstrap"
+            "bootstrap": "libs/bootstrap",
+            "turbolinks": "libs/turbolinks",
+            "nprogress": "libs/nprogress",
+            "jquery.waypoints": "libs/jquery.waypoints"
         },
         shim: {
             "bootstrap": {
@@ -18,5 +21,12 @@
     require(["jquery", "bootstrap"], function ($) {
         
     });
+
+    
+    require(["jquery", "jquery.waypoints"], function($) {
+        console.log($);
+    });
+    
+    require(["turbolinks", "nprogress"]);
 
 })();
